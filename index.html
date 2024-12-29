@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Abdul Rasheed</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Abdul Rasheed</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./Images/dp.jpg" alt="Abdul Rasheed profile picture" class="myimg">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Abdul Rasheed</h1>
+            <p class="section-text-p2">UI/UX Designer and Frontend Developer.</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Images/Abdul Rasheed Resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./Images/Linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://linkedin.com/in/abdul-rasheed16'">
+                <img src="./Images/Github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/Abdul-Rasheed16'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-text-p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./Images/profile.jpg" alt="" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>Education</h3>
+                        <p>Master of computer application<br />Bachelor of computer science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm a dynamic and creative UI/UX Designer and Front-End Developer.<br/>
+                        Passionate about leveraging the latest design trends and frontend<br/>technologies
+                        to enhance user experiences and drive business success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title"></h2>
+                <div class="article-container">
+                    <article>
+                        <div>
+                            <h3>UI/UX</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h3>JAVASCRIPT</h3>
+                            <p>Beginner</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h3>PYTHON</h3>
+                            <p>Beginner</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="section-container">
+           
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>Certification</h3>
+                        <p>Complete web & mobile designer:<br/> UI/UX,Figma, +more<br /></p>
+                        <h4>Udemy</h4>
+                    </div>
+                    <div class="details-container">
+                        <h3>Certification</h3>
+                        <p>Complete Python Bootcamp</p>
+                        <h4>Udemy</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <p class="section-text-p1">Browse my recent projects</p>
+        <h2 class="title">Frontend</h2>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/p-1.png" alt="" class="project-img">
+                    </div>
+                    <h4 class="experience-sub-title project-title">Tools information system</h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Abdul-Rasheed16/Tools-Information-website'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/p-2.png" alt="" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">E-Commerce</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Abdul-Rasheed16/Flower-Ecommerce'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/p-3.png" alt="" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Student management system</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Abdul-Rasheed16/Student-Management-System'">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="section-text-p1">Browse my recent projects</p>
+        <h2 class="title">UI/UX designs</h2>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/tools.png" alt="" class="project-img">
+                    </div>
+                    <h4 class="experience-sub-title project-title">Tools information system</h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('./Images/Tool-info.pdf')">Check out my design</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/Date and time page.jpg" alt="" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Movie Ticket Booking App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('./Images/Movie-Booking-App.pdf')">Check out my design</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section-text-p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper">
+            <div class="contact-info">
+                <img src="./Images/mail.png" alt="" class="icon contact-icon">
+                <p><a href="mailto:abdulrasheed160902@gmail.com">abdulrasheed160902@gmail.com</a></p>
+            </div>
+            <div class="contact-info">
+                <img src="./Images/phone.png" alt="" class="icon contact-icon">
+                <p>6374063553</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &copy; 2024 Abdul Rasheed. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
